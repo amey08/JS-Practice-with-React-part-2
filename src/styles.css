@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tile {
+  /* text-align: left; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  order: 3;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color: black transparent;
+  border-radius: 50%;
+  animation: spinnerAnimation 1s linear infinite;
+}
+
+@keyframes spinnerAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
